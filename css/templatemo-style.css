@@ -106,13 +106,14 @@ a:focus {
 }
 
 .navbar-toggler {
-  border: 1px solid white;
+  margin: 5px;
+    border: 1px solid #7a9aa3;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 .navbar-toggler-icon {
-  color: white;
+  color: #7a9aa3;
   padding-top: 6px;
 }
 
@@ -142,6 +143,16 @@ a:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.tm-next{
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  #menu{display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
 }
 @media (min-height: 830px) {
   #hero {
@@ -422,10 +433,9 @@ figure.effect-honey:hover h2 i {
   background-image: url(../img/i6.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 850px;
   position: relative;
-  padding-bottom: 50px;
-  padding-top: 160px;
+  padding-bottom: 80px;
+  padding-top: 80px;
   background-size: cover;
 }
 
