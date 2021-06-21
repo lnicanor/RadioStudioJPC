@@ -25,6 +25,11 @@ a:focus {
 .btn {
   padding: 8px 32px;
 }
+#bio {
+    height: 405px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
 
 .btn:hover {
   background-color: #ced4da;
@@ -33,6 +38,7 @@ a:focus {
 .tm-section-pad-top {
   background-color: #193a4c;
   padding-top: 135px;
+      padding-bottom: 70px;
 }
 
 .tm-text-primary {
@@ -148,12 +154,7 @@ a:focus {
   text-align: center;
 }
 
-@media (max-width: 500px) {
-  #menu{display: flex;
-  flex-direction: column;
-  justify-content: center;
-  }
-}
+
 @media (min-height: 830px) {
   #hero {
     background-position: center -210px;
@@ -234,6 +235,19 @@ a:focus {
 
 /* Introduction */
 
+.contacto{
+  display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+.footer{
+  display: flex;
+}
+.contacto a{
+  font-size: 20px;
+
+}
 .tm-section-title {
   font-size: 2.6rem;
   font-weight: normal;
@@ -259,7 +273,7 @@ a:focus {
 }
 
 .tm-gallery-container {
-  padding-bottom: 60px;
+  padding-bottom: 20px;
 }
 
 .tm-gallery-item {
@@ -396,7 +410,7 @@ figure.effect-honey h2 {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 1em .7em;
+  padding: 1em 5px;
   width: 100%;
   text-align: left;
   -webkit-transform: translate3d(0, -30px, 0);
@@ -435,7 +449,7 @@ figure.effect-honey:hover h2 i {
   background-repeat: no-repeat;
   position: relative;
   padding-bottom: 80px;
-  padding-top: 80px;
+  padding-top:67px;
   background-size: cover;
 }
 
@@ -501,7 +515,7 @@ figure.effect-honey:hover h2 i {
 
 .tm-footer {
   position: absolute;
-  bottom: 35px;
+  bottom: 15px;
   left: 0;
   right: 0;
   padding: 0 15px;
@@ -520,15 +534,23 @@ figure.effect-honey:hover h2 i {
 p {
   line-height: 1.9;
 }
-
+.paypal{
+  width: 39%;
+    margin: auto;
+    text-align: center;
+}
+.paypal h3{
+  font-size: 19px;
+}
 @media (min-width: 768px) {
   .tm-intro-text-container {
     padding-left: 65px;
   }
 
   .navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 30px;
-    padding-left: 30px;
+    font-size: 18px;
+       padding-right: 6px;
+    padding-left: 15px;
   }
 }
 
@@ -543,6 +565,7 @@ p {
 
   .tm-container-contact {
     max-width: 1063px;
+    margin-bottom: 30px;
   }
 }
 
@@ -575,11 +598,11 @@ p {
 
   .navbar-nav {
     max-width: 200px;
-    text-align: right;
+    text-align: center;
   }
 
   .navbar-collapse {
-    background-color: rgb(255, 255, 255);
+    background-color: #225361;
     padding: 10px;
     border-radius: 3px;
   }
@@ -610,5 +633,31 @@ p {
     display: block;
     margin-left: 0;
     margin-top: 20px;
+  }
+}
+@media (max-width: 500px) {
+  #menu{display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+  .tm-section-pad-top{
+    padding-top: 160px;
+  }
+  .footer{
+    flex-direction: column;
+  }
+  .contacto{
+    width: auto;
+  }
+  .paypal{
+    padding-top: 67px;
+    width: 85%;
+  }
+  #pay{
+    width: 105%;
+  }
+  #contact{
+    padding-top: 164px;
+ height: auto;
   }
 }
