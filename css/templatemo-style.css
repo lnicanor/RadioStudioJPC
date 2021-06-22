@@ -26,9 +26,8 @@ a:focus {
   padding: 8px 32px;
 }
 #bio {
-    height: 405px;
-    overflow: scroll;
-    overflow-x: hidden;
+  text-align: center;
+    height: 500px;
 }
 
 .btn:hover {
@@ -149,6 +148,10 @@ a:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+#dk{
+  padding: 0%;
 }
 .tm-next{
   text-align: center;
@@ -458,7 +461,9 @@ figure.effect-honey:hover h2 i {
   height: 8px;
   width: 100%;
 }
-
+#pb{
+  font-size: 1.1vw;
+}
 .tm-underline-inner {
   width: 25%;
   height: 8px;
